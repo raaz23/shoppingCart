@@ -1,0 +1,88 @@
+
+.ui.grid.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: 5rem;
+
+  }
+  
+  .four.column.wide {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .four.column.wide:hover {
+    box-shadow: 0 8px 12px 3px rgba(0, 0, 0, 0.2);
+    scale: 1.0125;
+
+  }
+  
+  .ui.link.cards .card .image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  
+  }
+  
+  .ui.link.cards .card .content {
+    padding: 1rem;
+    flex-grow: 1;
+  }
+  
+  .ui.link.cards .card .header {
+    font-size: 1.2rem;
+    font-weight: bold;
+   
+  }
+  
+  .ui.link.cards .card .meta {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .ui.link.cards .card .meta::before {
+    content: "Price: ";
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit; /* Ensures that the link retains its original color */
+  }
+  ::-webkit-scrollbar {
+    width: 0.5rem; /* Adjust the width as needed */
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .four.column.wide {
+      width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .four.column.wide {
+      width: 100%; 
+    }
+    ::-webkit-scrollbar {
+      width: 0.5rem; /* Adjust the width as needed */
+      background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+  }
+  

@@ -1,0 +1,46 @@
+.contain {
+    position: relative;
+    width: 90vw;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    left: 5vw;
+  }
+.cartErr{
+    position: fixed;
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    word-break: break-all;
+    background-color: #ff9f43;
+    color: #222f3e;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 7rem;
+    border-radius: 0.7rem;
+
+}
+
+@media (max-width: 768px) {
+    .contain {
+      width: 100%;
+      height: 80vh;
+      top: 10vh;
+      left: 0;
+      overflow: auto;
+    }
+  
+    .cartErr {
+      width: 80%;
+      height: auto;
+      max-height: 5rem;
+      left:2.8rem;
+      transform: translate(0, -50%);
+    }
+  }
+  
+  
+  
+  
